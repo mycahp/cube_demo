@@ -1,0 +1,29 @@
+<div class="home-container">
+  <div class="header">
+    <h1>Exploring Olympic Data with Cube.js</h1>
+    <div class="query-select">
+      <div class="form-floating">
+        <select class="form-select" id="querySelect" appearance="fill" (change)="handleSelectionChange($event)">
+          <option value="medalsByCountry">Medal Count by Country (Top 10)</option>
+          <option value="avgHeightByCountry">Average Height by Country</option>
+          <option value="avgAgeBySport">Average Age by Sport</option>
+          <option value="genderByMedal">Medal by Gender</option>
+          <option value="medalsByCity">Medal Count by City</option>
+        </select>
+        <label for="querySelect">Select a Query</label>
+      </div>
+      <i class="bi bi-code-slash" *ngIf="!codeMode" (click)="toggleCodeMode()"></i>
+      <i class="bi bi-graph-up" *ngIf="codeMode" (click)="toggleCodeMode()"></i>
+    </div>
+  </div>
+
+  <div class="chart-area">
+    <app-chart *ngIf="!loading && !codeMode" [yValues]="yValues" [xValues]="xValues" [titleSettings]='titleSettings'>
+    </app-chart>
+<pre *ngIf="codeMode">
+<h3>Unlderylying Query:</h3>
+<code>{{currentQuery | json}}</code>
+</pre>
+    <div class="spinner-border text-primary" *ngIf="loading" role="status"></div>
+  </div>
+</div>
