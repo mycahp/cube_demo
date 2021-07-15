@@ -5,8 +5,8 @@
 
 ## About
 
-This a demo of CubeJS being utilized in an Angular applicaiton to demonstrate the ability for an Angular application to query for data 
-and manipulate it to be used with visualization libray (in this case, ng2-charts). This demo provides:
+This a demo of CubeJS being utilized in an Angular application to demonstrate the ability for an Angular application to query for data 
+and manipulate it to be used with visualization library (in this case, ng2-charts). This demo provides:
 
 * A rudimentary query and visualization switching system to demonstrate dynamically loading data from CubeJS
 * The CubeJS backend and playground environment that can be used to explore different queries
@@ -25,7 +25,7 @@ There are two different processes that need to run for the demo to work:
 1. The Angular application, which can be run by using `ng serve` in the `ui` folder
 2. The CubeJS backend and playground, which can be run using `npm run dev` in the `cube` folder
 
-Before running these, be sure to do an `npm install` in the folder to install the dependencies.
+Before running these, be sure to do `npm install` in the folder to install the dependencies.
 
 ## Accessing the Demo
 
