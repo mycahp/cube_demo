@@ -12,6 +12,9 @@ and manipulate it to be used with visualization libray (in this case, ng2-charts
 * The CubeJS backend and playground environment that can be used to explore different queries
 * A data set that can be loaded into your database of choice for CubeJS to query against
 
+## What is CubeJS?
+Cube describes itself as a tool “primarily used to build internal business intelligence tools or add customer-facing analytics to existing applications.” Cube provides a playground for building visualizations, but also provides the API layer to build your own custom visualizations using whichever visualization library or frontend framework you want.
+
 ## Setup
 
 Data needs to be imported into your database of choice. Simply import the provided `athlete_events.csv` file under data into a table. 
